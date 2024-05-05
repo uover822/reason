@@ -1,0 +1,6 @@
+let Seneca = require('seneca')
+Seneca({tag: 'reason', legacy: {meta: true}, timeout: 60000})
+//  .use('zipkin-tracer', {host: 'zipkin', sampling: 1})
+//  .use('statsd', {host: 'stats'})
+  .use('../reason.js')
+  .listen(8035)

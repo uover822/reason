@@ -1,0 +1,4 @@
+
+FROM msr-reason:1
+
+CMD ["node", "/app/srv/reason-prod.js"]

@@ -1,0 +1,5 @@
+let Seneca = require('seneca')
+Seneca({tag: 'reason', timeout: 60000})
+  //.test('print')
+  .use('../reason.js')
+  .listen(8035)
